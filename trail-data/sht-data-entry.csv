@@ -1,0 +1,118 @@
+name,isTrailhead,northToSouth,southToNorth,size,water,distanceToParking,overnightParking
+Northern Terminus,FALSE,0,297.8,,,,unknown
+Otter Lake Road Trailhead,TRUE,1.2,296.6,,,0.7,unknown
+Andy Creek,,2.9,294.9,s,,,unknown
+Andy Lake Road Trailhead,TRUE,4.5,293.3,,,0,unknown
+Jackson Creek,,8,289.8,s,,,unknown
+Jackson Lake road Trailhead,TRUE,9.4,288.4,,,0.1,unknown
+Caribou Pond,,11.3,,s,,,unknown
+Arrowhead Trail Trailhead,TRUE,14.1,283.7,,,0.1,unknown
+North Carlson Pond,,15,282.8,m,,,unknown
+Hazel,,19.9,277.9,s,none,,unknown
+North Camp 20 Road Trailhead,TRUE,22,275.8,,,1.7,unknown
+South Camp 20 Road Trailhead,TRUE,23.7,274.1,,,1.7,unknown
+Judge C.R. Magney State Park Trailhead,TRUE,28.3,269.5,,,0,unknown
+Northwest Little Brule River,,31.1,266.7,s,,,unknown
+North Little Brule River,,31.6,266.2,m,,,unknown
+South Little Brule River,,32,265.8,s,,,unknown
+Dadunce River,,37.2,260.6,s,,,unknown
+Kadunce River State Wayside Trailhead,TRUE,37.4,260.4,,,0.7,unknown
+West Fork Kadunce,,37.7,260.1,m,"none, 0.3mi north or south",,unknown
+Crow Creek,,38,259.8,m,,,unknown
+Kimball Creek,,39.2,258.6,s,,,unknown
+Cliff Creek,,41.7,256.1,l,,,unknown
+Durfee Creek,,42.8,255,l,,,unknown
+Woods Creek,,45.2,252.6,m,,,unknown
+Lindskog Road Trailhead,TRUE,45.7,252.1,,,0,unknown
+East Devil Track River,,47.4,250.1,s,,,unknown
+West Devil Track River,,47.8,250,l,,,unknown
+Pincushion Mountain Trailhead,TRUE,50.5,247.3,,,,unknown
+Cook County Road 6 Trailhead,TRUE,55.6,242.2,,,0.1,unknown
+North Bally Creek Pond,,58.4,239.4,s,,,unknown
+South Bally Creek Pond,,58.6,239.2,m,,,unknown
+Bally Creek Road Trailhead,TRUE,58.7,239.1,,,0,unknown
+Sundling Creek,,59.8,238,m,,,unknown
+Sundling Creek Trailhead,TRUE,59.8,238,,,0.7,unknown
+North Cascade River,,63.3,234.5,l,,,unknown
+Cook County Road 45 Trailhead,TRUE,64.2,233.6,,,0.3,unknown
+Cut Log,,65.7,232.1,s,,,unknown
+Big White Pine,,66.2,231.6,s,,,unknown
+Cascade River Wayside Trailhead,TRUE,67.2,230.6,,,0.6,unknown
+Camp Creek,,69.2,228.6,l,,,unknown
+Spruce Creek,,72.4,225.4,l,,,unknown
+Jonvick Creek,,74.6,223.2,s,,,unknown
+Caribou Trail Trailhead,TRUE,76.7,221.1,,,0.9,unknown
+East Lake Agnes,,76.9,220.9,m,,,unknown
+West Lake Agnes,,77.3,220.5,m,,,unknown
+East Poplar River,,80.2,217.6,s,,,unknown
+West Poplar River,,80.6,217.2,m,,,unknown
+Skil Hill Road Trailhead,TRUE,82.2,215.6,,,0.2,unknown
+Mystery Mountain,,82.7,215.1,l,"none, 0.5 north",,unknown
+East Rollins Creek,,87.1,210.7,s,,,unknown
+West Rollins Creek,,87.1,210.7,m,,,unknown
+Onion River Road Trailhead,TRUE,88.7,209.1,,,0,unknown
+Onion River Road Trailhead,,89.1,208.7,l,,,unknown
+East Leveaux Pond,,90.3,207.5,m,,,unknown
+West Leveaux Pond,,90.4,207.4,l,,,unknown
+Springdale Creek,,92.6,205.2,m,,,unknown
+Sawbill Trail Trailhead,TRUE,94.2,203.6,,,0,unknown
+Temperance River Wayside Trailhead,TRUE,98.8,199,,,0.2,unknown
+Temperance River Road Trailhead,TRUE,99.6,198.2,,,0,unknown
+Skou Road Trailhead,TRUE,101.5,196.3,,,1.4,unknown
+South Cross River,,101.5,196.3,m,,,unknown
+North Cross River,,101.6,196.2,s,,,unknown
+The Ledge,,102.2,195.6,s,,,unknown
+The Falls,,103,194.8,s,,,unknown
+Fredenberg Creek,,104.8,193,l,,,unknown
+Cook County Road 1 Trailhead,TRUE,106.4,191.4,,,0,unknown
+Dyers Creek,,107.7,190.1,m,,,unknown
+Sugarloaf Pond,,111.1,186.7,m,,,unknown
+Sugarloaf Road Trailhead,TRUE,112,185.8,,,0,unknown
+Cystal Creek,,113.5,184.3,m,,,unknown
+East Caribou River,,114.7,183.1,l,,,unknown
+Caribou Falls State Wayside Trailhead,TRUE,114.7,183.1,,,0.7,unknown
+West Caribou River,,114.8,183,s,,,unknown
+Horseshoe Ridge,,117.6,180.2,m,unreliable,,unknown
+George Crosby Manitou State Park Trailhead,TRUE,121.7,176.1,,,,unknown
+Aspen Knob,,122.6,175.2,s,,,unknown
+Blesener Creek,,124.6,173.2,s,,,unknown
+East Branch Baptism River,,125.2,172.6,s,,,unknown
+Sonju Lake Road Trailhead,TRUE,125.7,172.1,,,0.1,unknown
+North Sonju Lake,,127,170.8,m,,,unknown
+South Sonju Lake,,127.3,170.5,l,,,unknown
+North Egge Lake,,130.3,167.5,m,,,unknown
+South Egge Lake,,130.5,167.3,m,,,unknown
+Lake County Road 7 Trailhead,TRUE,133,164.8,,,0.3,unknown
+Leskinen Creek,,135.1,162.7,l,,,unknown
+Section 13,,138.8,159,m,"none, 0.5 mi north or 1.1 mi south",,unknown
+Lake County Road 6 Trailhead,TRUE,140.2,157.6,,,0.2,unknown
+East Kenney Creek,,144.9,152.9,m,unreliable,,unknown
+West Kennedy Creek,,144.9,152.9,m,unreliable,,unknown
+Minnesota Highway 1 Trailhead,TRUE,147.2,150.6,,,0.1,unknown
+Tettegouche State Park Wayside Trailhead,TRUE,148,149.8,,,1.2,unknown
+Tettegouche State Park Trailhead,TRUE,148.6,149.2,,,0.3,unknown
+East Palisade Creek,,152.9,144.9,l,,,unknown
+Bear Lake,,154.7,143.1,s,,,unknown
+Penn Creek,,155.9,141.9,l,,,unknown
+Penn Boulevard Trailhead,,157.9,139.9,,,0.1,unknown
+East Beaver River,,161.2,136.6,s,,,unknown
+West Beaver River,,161.5,136.3,s,,,unknown
+Lax Lake Road Trailhead,TRUE,162.2,135.6,,,0,unknown
+Fault Line Creek,,165.9,131.9,m,,,unknown
+Beaver Pond,,167.3,130.5,m,,,unknown
+Chapins Ridge,,169,128.8,m,"none, 0.2mi north",,unknown
+Split Rock River Wayside Trailhead,TRUE,172.3,125.5,,,0.7,unknown
+Southeast Split Rock River,,173.6,124.2,s,,,unknown
+Northeast Split Rock River,,173.9,123.9,l,,,unknown
+Northwest Split Rock River,,174.1,123.7,m,,,unknown
+Southwest Split Rock River,,174.4,123.4,m,,,unknown
+Split Rock River Wayside 2 Trailhead,TRUE,175.9,121.9,,,0.5,unknown
+Blueberry Hill,,178.3,119.5,m,Unreliable,,unknown
+Gooseberry Falls State Park Visitor Center Trailhead,TRUE,182,115.8,,,0.2,unknown
+Gooseberry River,,184.5,113.3,l,,,unknown
+Middle Gooseberry River,,185.3,112.5,s,,,unknown
+East Gooseberry River,,185.4,112.4,s,,,unknown
+West Gooseberry River,,186.3,111.5,m,,,unknown
+Crow Valley,,189.5,108.3,m,Unreliable,,unknown
+W. Castle Danger Road Trailhead,TRUE,190.7,107.1,,,0,unknown
+Lake County Road 301 Trailhead,TRUE,196.7,101.1,,,,unknown

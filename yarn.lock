@@ -187,10 +187,17 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@18.15.3":
+"@types/node@*", "@types/node@18.15.3":
   version "18.15.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.3.tgz#f0b991c32cfc6a4e7f3399d6cb4b8cf9a0315014"
   integrity sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==
+
+"@types/papaparse@^5.3.7":
+  version "5.3.7"
+  resolved "https://registry.yarnpkg.com/@types/papaparse/-/papaparse-5.3.7.tgz#8d3bf9e62ac2897df596f49d9ca59a15451aa247"
+  integrity sha512-f2HKmlnPdCvS0WI33WtCs5GD7X1cxzzS/aduaxSu3I7TbhWlENjSPs6z5TaB9K0J+BH1jbmqTaM+ja5puis4wg==
+  dependencies:
+    "@types/node" "*"
 
 "@types/prop-types@*":
   version "15.7.5"
@@ -1598,6 +1605,11 @@ p-locate@^5.0.0:
   integrity sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==
   dependencies:
     p-limit "^3.0.2"
+
+papaparse@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.4.0.tgz#a3e47c32f32466d30af67ce2fef7910b3c3d4d91"
+  integrity sha512-ZBQABWG09p+u8rFoJVl/GhgxZ5zy9Zh1Lu/LVc7VX5T4nljjC14/YTcpebYwqP218B9X307eBOP7Tuhoqv7v7w==
 
 parent-module@^1.0.0:
   version "1.0.1"
