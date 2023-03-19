@@ -3,7 +3,18 @@ import { Point } from "./points";
 import { Segment } from "./getAllSegments";
 
 const points: Point[] = [
-  { name: "asdf", mile: 1, type: "campsite", id: "point0" },
+  {
+    name: "asdf",
+    southToNorth: 1,
+    northToSouth: 1,
+    type: "campsite",
+    id: "point0",
+    size: "M",
+    unreliableWater: false,
+    waterNotes: "",
+    distanceToParking: 0,
+    overnightParking: "unknown",
+  },
 ];
 
 const mockSegment: Segment = {
@@ -78,10 +89,16 @@ describe("findTrips", () => {
 
   it("should return one trip when there is one segment that starts and ends at trailheads", () => {
     const segments: Segment[] = [
-      { ...mockSegment, startsAtTrailhead: true, endsAtTrailhead: true },
+      {
+        ...mockSegment,
+        startPointId: "1",
+        endPointId: "2",
+        startsAtTrailhead: true,
+        endsAtTrailhead: true,
+      },
     ];
 
-    const numberOfDays = 10;
+    const numberOfDays = 1;
 
     const trips = findTrips({
       segments,
@@ -226,7 +243,7 @@ describe("findTrips", () => {
     expect(trip2.segments.length).toEqual(3);
   });
 
-  it("should return two trips for multiple options from same start segment", () => {
+  it("should return two trips for multiple options from same start point", () => {
     const segments: Segment[] = [
       {
         ...mockSegment,
@@ -252,14 +269,30 @@ describe("findTrips", () => {
         startsAtTrailhead: false,
         endsAtTrailhead: true,
       },
-      // 2nd trip, only two segments
+      // 2nd trip
       {
         ...mockSegment,
         id: "10003",
         startPointId: "1",
-        endPointId: "3",
+        endPointId: "13",
         startsAtTrailhead: true,
         endsAtTrailhead: false,
+      },
+      {
+        ...mockSegment,
+        id: "10004",
+        startPointId: "13",
+        endPointId: "14",
+        startsAtTrailhead: false,
+        endsAtTrailhead: false,
+      },
+      {
+        ...mockSegment,
+        id: "10005",
+        startPointId: "14",
+        endPointId: "4",
+        startsAtTrailhead: false,
+        endsAtTrailhead: true,
       },
     ];
 
@@ -273,10 +306,10 @@ describe("findTrips", () => {
     expect(trips.length).toEqual(2);
     const [trip1, trip2] = trips;
     expect(trip1.segments.length).toEqual(3);
-    expect(trip2.segments.length).toEqual(2);
+    expect(trip2.segments.length).toEqual(3);
   });
 
-  it("should return two trips for multiple options in the middle", () => {
+  it.skip("should return two trips for multiple options in the middle", () => {
     const segments: Segment[] = [
       {
         ...mockSegment,

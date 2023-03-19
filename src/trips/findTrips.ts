@@ -105,9 +105,9 @@ export const findTrips = ({
       0
     );
     const description =
-      trip.segments[0].points[0].name +
+      trip.segments[0]?.points[0]?.name +
       " to " +
-      trip.segments[trip.segments.length - 1].points[1].name;
+      trip.segments[trip.segments.length - 1]?.points[1]?.name;
     return { ...trip, totalDistance, description };
   });
 };
