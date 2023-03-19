@@ -127,7 +127,6 @@ export const FindTrip = () => {
                             "trailhead"
                               ? `(${segment.points[
                                   segment.points.length - 1
-                                  // @ts-expect-error dont be dumb TS
                                 ].distanceToParking.toFixed(1)} mi)`
                               : ""}
                             {segment.points[segment.points.length - 1]

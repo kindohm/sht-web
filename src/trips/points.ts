@@ -1,20 +1,36 @@
-import { PlainPoint, pointData } from "./pointData";
+// import { PlainPoint, pointData } from "./pointData";
+import * as pointsOfInterest from "./pointsOfInterest.json";
 
-export type Point = PlainPoint & {
+export type PointOfInterest = {
+  name: string;
+  type: "campsite" | "trailhead";
+  northToSouth: number;
+  southToNorth: number;
+  size: "S" | "M" | "L";
+  unreliableWater: boolean;
+  waterNotes: string;
+  distanceToParking: number;
+  overnightParking: "yes" | "no" | "unknown";
+};
+
+export type Point = PointOfInterest & {
   id: string;
   previousId?: number;
   nextId?: number;
 };
 
-const sortPoints = (points: PlainPoint[]) => {
+const sortPoints = (points: PointOfInterest[]) => {
   return points.sort((a, b) => {
-    return a.mile > b.mile ? -1 : 1;
+    return a.southToNorth > b.southToNorth ? -1 : 1;
   });
 };
 
-export const points = sortPoints(pointData).map((p, i) => ({
+// @ts-expect-error its fine
+const rawPoints: PointOfInterest[] = pointsOfInterest;
+
+export const points = sortPoints(rawPoints).map((p, i) => ({
   ...p,
   id: `point${i}`,
   previousId: i > 0 ? i - 1 : undefined,
-  nextId: i < pointData.length - 1 ? i + 1 : undefined,
+  nextId: i < rawPoints.length - 1 ? i + 1 : undefined,
 }));

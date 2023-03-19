@@ -27,18 +27,21 @@ export const getAllSegments = ({
   let segmentId = 10000;
 
   return points.reduce((segments: Segment[], point: Point) => {
-    const { mile, id } = point;
+    const { southToNorth, id } = point;
 
-    const maxMile = mile + maxDailyDistance;
-    const minMile = mile + minDaily;
+    const maxMile = southToNorth + maxDailyDistance;
+    const minMile = southToNorth + minDaily;
     const pointsWithinDistance = points.filter(
-      (p) => p.id !== id && p.mile <= maxMile && p.mile >= minMile
+      (p) =>
+        p.id !== id && p.southToNorth <= maxMile && p.southToNorth >= minMile
     );
 
     const currentPointSegments = pointsWithinDistance.map(
       (p: Point): Segment => {
         const pointsBetween = pointsWithinDistance.filter(
-          (b) => b.mile > point.mile && b.mile < p.mile
+          (b) =>
+            b.southToNorth > point.southToNorth &&
+            b.southToNorth < p.southToNorth
         );
         segmentId++;
         return {
@@ -48,7 +51,7 @@ export const getAllSegments = ({
           endsAtTrailhead: p.type === "trailhead",
           name: `${point.name} to ${p.name}`,
           reverseName: `${p.name} to ${point.name}`,
-          distance: p.mile - point.mile,
+          distance: p.southToNorth - point.southToNorth,
           startPointId: point.id,
           endPointId: p.id,
         };

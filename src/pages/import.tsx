@@ -1,25 +1,57 @@
 import Head from "next/head";
 import { useState } from "react";
 import * as Papa from "papaparse";
+import { PointOfInterest } from "@/trips/points";
+
+type ParsedRow = {
+  name: string;
+  isTrailhead: string;
+  northToSouth: string;
+  southToNorth: string;
+  size: string;
+  water: string;
+  distanceToParking: string;
+  overnightParking: string;
+};
+
+const convert = (rows: ParsedRow[]): PointOfInterest[] => {
+  return rows.map((row) => {
+    return {
+      name: row.name,
+      northToSouth: +row.northToSouth,
+      southToNorth: +row.southToNorth,
+      type: row.isTrailhead === "TRUE" ? "trailhead" : "campsite",
+      size:
+        row.size.toLowerCase() === "s"
+          ? "S"
+          : row.size.toLowerCase() === "l"
+          ? "L"
+          : "M",
+      unreliableWater: row.water && row.water.trim() !== "" ? true : false,
+      waterNotes: row.water,
+      distanceToParking: +row.distanceToParking,
+      overnightParking:
+        row.overnightParking === "yes"
+          ? "yes"
+          : row.overnightParking === "no"
+          ? "no"
+          : "unknown",
+    };
+  });
+};
 
 export default function Import() {
   const [csvInput, setCsvInput] = useState("");
+  const [output, setOutput] = useState("");
 
-  const convert = () => {
+  const convertClick = () => {
     console.log("input", csvInput);
     const result = Papa.parse(csvInput, { header: true });
 
-    // parsed objects look like this:
-    // {
-    //   "name": "Northern Terminus",
-    //   "isTrailhead": "FALSE",
-    //   "northToSouth": "0",
-    //   "southToNorth": "297.8",
-    //   "size": "",
-    //   "water": "",
-    //   "distanceToParking": "",
-    //   "overnightParking": "unknown"
-    // }
+    // @ts-expect-error its ok
+    const data: ParsedRow[] = result.data;
+    const converted = convert(data);
+    setOutput(JSON.stringify(converted, null, 2));
   };
 
   return (
@@ -45,9 +77,15 @@ export default function Import() {
               />
             </div>
             <div className="mb-3">
-              <button className="btn btn-primary" onClick={convert}>
+              <button className="btn btn-primary" onClick={convertClick}>
                 Convert
               </button>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="csvInput" className="form-label">
+                Output:
+              </label>
+              <textarea className="form-control" id="output" value={output} />
             </div>
           </div>
         </div>
