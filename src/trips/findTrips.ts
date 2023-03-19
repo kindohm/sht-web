@@ -96,10 +96,13 @@ export const findTrips = ({
           (seg.endsAtTrailhead || seg.startsAtTrailhead)
       );
       return trailHeadInMiddle.length === 0;
-    })
-    .filter((trip) => trip.segments.length === numberOfDays);
+    });
 
-  return trips.map((trip) => {
+  const tripsWithCorrectDays = trips.filter(
+    (trip) => trip.segments.length === numberOfDays
+  );
+
+  return tripsWithCorrectDays.map((trip) => {
     const totalDistance = trip.segments.reduce(
       (sum, seg) => sum + seg.distance,
       0

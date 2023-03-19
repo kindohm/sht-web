@@ -1,7 +1,8 @@
 // import { PlainPoint, pointData } from "./pointData";
-import * as pointsOfInterest from "./pointsOfInterest.json";
+import { pointsOfInterest } from "./pointsOfInterest";
 
 export type PointOfInterest = {
+  id: string;
   name: string;
   type: "campsite" | "trailhead";
   northToSouth: number;
@@ -28,9 +29,10 @@ const sortPoints = (points: PointOfInterest[]) => {
 // @ts-expect-error its fine
 const rawPoints: PointOfInterest[] = pointsOfInterest;
 
+// console.log("rawpoints", rawPoints);
+
 export const points = sortPoints(rawPoints).map((p, i) => ({
   ...p,
-  id: `point${i}`,
   previousId: i > 0 ? i - 1 : undefined,
   nextId: i < rawPoints.length - 1 ? i + 1 : undefined,
 }));

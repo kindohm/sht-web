@@ -15,8 +15,9 @@ type ParsedRow = {
 };
 
 const convert = (rows: ParsedRow[]): PointOfInterest[] => {
-  return rows.map((row) => {
+  return rows.map((row, i) => {
     return {
+      id: i.toString(),
       name: row.name,
       northToSouth: +row.northToSouth,
       southToNorth: +row.southToNorth,
@@ -45,7 +46,6 @@ export default function Import() {
   const [output, setOutput] = useState("");
 
   const convertClick = () => {
-    console.log("input", csvInput);
     const result = Papa.parse(csvInput, { header: true });
 
     // @ts-expect-error its ok
@@ -85,7 +85,12 @@ export default function Import() {
               <label htmlFor="csvInput" className="form-label">
                 Output:
               </label>
-              <textarea className="form-control" id="output" value={output} />
+              <textarea
+                className="form-control"
+                id="output"
+                value={output}
+                readOnly={true}
+              />
             </div>
           </div>
         </div>

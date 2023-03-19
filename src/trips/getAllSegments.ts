@@ -43,10 +43,14 @@ export const getAllSegments = ({
             b.southToNorth > point.southToNorth &&
             b.southToNorth < p.southToNorth
         );
+        const segmentPoints = [point, ...pointsBetween, p].sort((a, b) => {
+          return a.id > b.id ? -1 : 1;
+        });
+
         segmentId++;
         return {
           id: segmentId.toString(),
-          points: [point, ...pointsBetween, p],
+          points: segmentPoints,
           startsAtTrailhead: point.type === "trailhead",
           endsAtTrailhead: p.type === "trailhead",
           name: `${point.name} to ${p.name}`,
