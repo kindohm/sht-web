@@ -17,7 +17,7 @@ type ParsedRow = {
 const convert = (rows: ParsedRow[]): PointOfInterest[] => {
   return rows.map((row, i) => {
     return {
-      id: i,
+      id: rows.length -1 - i,
       name: row.name,
       northToSouth: +row.northToSouth,
       southToNorth: +row.southToNorth,

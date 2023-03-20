@@ -1,6 +1,6 @@
 export const pointsOfInterest = [
   {
-    id: 0,
+    id: 116,
     name: "Northern Terminus",
     northToSouth: 0,
     southToNorth: 297.8,
@@ -12,7 +12,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 1,
+    id: 115,
     name: "Otter Lake Road Trailhead",
     northToSouth: 1.2,
     southToNorth: 296.6,
@@ -24,7 +24,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 2,
+    id: 114,
     name: "Andy Creek",
     northToSouth: 2.9,
     southToNorth: 294.9,
@@ -36,7 +36,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 3,
+    id: 113,
     name: "Andy Lake Road Trailhead",
     northToSouth: 4.5,
     southToNorth: 293.3,
@@ -48,7 +48,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 4,
+    id: 112,
     name: "Jackson Creek",
     northToSouth: 8,
     southToNorth: 289.8,
@@ -60,7 +60,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 5,
+    id: 111,
     name: "Jackson Lake road Trailhead",
     northToSouth: 9.4,
     southToNorth: 288.4,
@@ -72,7 +72,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 6,
+    id: 110,
     name: "Caribou Pond",
     northToSouth: 11.3,
     southToNorth: 0,
@@ -84,7 +84,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 7,
+    id: 109,
     name: "Arrowhead Trail Trailhead",
     northToSouth: 14.1,
     southToNorth: 283.7,
@@ -96,7 +96,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 8,
+    id: 108,
     name: "North Carlson Pond",
     northToSouth: 15,
     southToNorth: 282.8,
@@ -108,7 +108,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 9,
+    id: 107,
     name: "Hazel",
     northToSouth: 19.9,
     southToNorth: 277.9,
@@ -120,7 +120,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 10,
+    id: 106,
     name: "North Camp 20 Road Trailhead",
     northToSouth: 22,
     southToNorth: 275.8,
@@ -132,7 +132,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 11,
+    id: 105,
     name: "South Camp 20 Road Trailhead",
     northToSouth: 23.7,
     southToNorth: 274.1,
@@ -144,7 +144,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 12,
+    id: 104,
     name: "Judge C.R. Magney State Park Trailhead",
     northToSouth: 28.3,
     southToNorth: 269.5,
@@ -156,7 +156,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 13,
+    id: 103,
     name: "Northwest Little Brule River",
     northToSouth: 31.1,
     southToNorth: 266.7,
@@ -168,7 +168,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 14,
+    id: 102,
     name: "North Little Brule River",
     northToSouth: 31.6,
     southToNorth: 266.2,
@@ -180,7 +180,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 15,
+    id: 101,
     name: "South Little Brule River",
     northToSouth: 32,
     southToNorth: 265.8,
@@ -192,7 +192,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 16,
+    id: 100,
     name: "Dadunce River",
     northToSouth: 37.2,
     southToNorth: 260.6,
@@ -204,7 +204,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 17,
+    id: 99,
     name: "Kadunce River State Wayside Trailhead",
     northToSouth: 37.4,
     southToNorth: 260.4,
@@ -216,7 +216,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 18,
+    id: 98,
     name: "West Fork Kadunce",
     northToSouth: 37.7,
     southToNorth: 260.1,
@@ -228,7 +228,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 19,
+    id: 97,
     name: "Crow Creek",
     northToSouth: 38,
     southToNorth: 259.8,
@@ -240,7 +240,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 20,
+    id: 96,
     name: "Kimball Creek",
     northToSouth: 39.2,
     southToNorth: 258.6,
@@ -252,7 +252,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 21,
+    id: 95,
     name: "Cliff Creek",
     northToSouth: 41.7,
     southToNorth: 256.1,
@@ -264,7 +264,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 22,
+    id: 94,
     name: "Durfee Creek",
     northToSouth: 42.8,
     southToNorth: 255,
@@ -276,7 +276,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 23,
+    id: 93,
     name: "Woods Creek",
     northToSouth: 45.2,
     southToNorth: 252.6,
@@ -288,7 +288,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 24,
+    id: 92,
     name: "Lindskog Road Trailhead",
     northToSouth: 45.7,
     southToNorth: 252.1,
@@ -300,7 +300,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 25,
+    id: 91,
     name: "East Devil Track River",
     northToSouth: 47.4,
     southToNorth: 250.1,
@@ -312,7 +312,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 26,
+    id: 90,
     name: "West Devil Track River",
     northToSouth: 47.8,
     southToNorth: 250,
@@ -324,7 +324,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 27,
+    id: 89,
     name: "Pincushion Mountain Trailhead",
     northToSouth: 50.5,
     southToNorth: 247.3,
@@ -336,7 +336,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 28,
+    id: 88,
     name: "Cook County Road 6 Trailhead",
     northToSouth: 55.6,
     southToNorth: 242.2,
@@ -348,7 +348,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 29,
+    id: 87,
     name: "North Bally Creek Pond",
     northToSouth: 58.4,
     southToNorth: 239.4,
@@ -360,7 +360,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 30,
+    id: 86,
     name: "South Bally Creek Pond",
     northToSouth: 58.6,
     southToNorth: 239.2,
@@ -372,7 +372,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 31,
+    id: 85,
     name: "Bally Creek Road Trailhead",
     northToSouth: 58.7,
     southToNorth: 239.1,
@@ -384,7 +384,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 32,
+    id: 84,
     name: "Sundling Creek",
     northToSouth: 59.8,
     southToNorth: 238,
@@ -396,7 +396,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 33,
+    id: 83,
     name: "Sundling Creek Trailhead",
     northToSouth: 59.8,
     southToNorth: 238,
@@ -408,7 +408,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 34,
+    id: 82,
     name: "North Cascade River",
     northToSouth: 63.3,
     southToNorth: 234.5,
@@ -420,7 +420,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 35,
+    id: 81,
     name: "Cook County Road 45 Trailhead",
     northToSouth: 64.2,
     southToNorth: 233.6,
@@ -432,7 +432,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 36,
+    id: 80,
     name: "Cut Log",
     northToSouth: 65.7,
     southToNorth: 232.1,
@@ -444,7 +444,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 37,
+    id: 79,
     name: "Big White Pine",
     northToSouth: 66.2,
     southToNorth: 231.6,
@@ -456,7 +456,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 38,
+    id: 78,
     name: "Cascade River Wayside Trailhead",
     northToSouth: 67.2,
     southToNorth: 230.6,
@@ -468,7 +468,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 39,
+    id: 77,
     name: "Camp Creek",
     northToSouth: 69.2,
     southToNorth: 228.6,
@@ -480,7 +480,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 40,
+    id: 76,
     name: "Spruce Creek",
     northToSouth: 72.4,
     southToNorth: 225.4,
@@ -492,7 +492,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 41,
+    id: 75,
     name: "Jonvick Creek",
     northToSouth: 74.6,
     southToNorth: 223.2,
@@ -504,7 +504,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 42,
+    id: 74,
     name: "Caribou Trail Trailhead",
     northToSouth: 76.7,
     southToNorth: 221.1,
@@ -516,7 +516,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 43,
+    id: 73,
     name: "East Lake Agnes",
     northToSouth: 76.9,
     southToNorth: 220.9,
@@ -528,7 +528,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 44,
+    id: 72,
     name: "West Lake Agnes",
     northToSouth: 77.3,
     southToNorth: 220.5,
@@ -540,7 +540,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 45,
+    id: 71,
     name: "East Poplar River",
     northToSouth: 80.2,
     southToNorth: 217.6,
@@ -552,7 +552,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 46,
+    id: 70,
     name: "West Poplar River",
     northToSouth: 80.6,
     southToNorth: 217.2,
@@ -564,7 +564,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 47,
+    id: 69,
     name: "Skil Hill Road Trailhead",
     northToSouth: 82.2,
     southToNorth: 215.6,
@@ -576,7 +576,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 48,
+    id: 68,
     name: "Mystery Mountain",
     northToSouth: 82.7,
     southToNorth: 215.1,
@@ -588,7 +588,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 49,
+    id: 67,
     name: "East Rollins Creek",
     northToSouth: 87.1,
     southToNorth: 210.7,
@@ -600,7 +600,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 50,
+    id: 66,
     name: "West Rollins Creek",
     northToSouth: 87.1,
     southToNorth: 210.7,
@@ -612,7 +612,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 51,
+    id: 65,
     name: "Onion River Road Trailhead",
     northToSouth: 88.7,
     southToNorth: 209.1,
@@ -624,7 +624,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 52,
+    id: 64,
     name: "Onion River Road Trailhead",
     northToSouth: 89.1,
     southToNorth: 208.7,
@@ -636,7 +636,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 53,
+    id: 63,
     name: "East Leveaux Pond",
     northToSouth: 90.3,
     southToNorth: 207.5,
@@ -648,7 +648,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 54,
+    id: 62,
     name: "West Leveaux Pond",
     northToSouth: 90.4,
     southToNorth: 207.4,
@@ -660,7 +660,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 55,
+    id: 61,
     name: "Springdale Creek",
     northToSouth: 92.6,
     southToNorth: 205.2,
@@ -672,7 +672,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 56,
+    id: 60,
     name: "Sawbill Trail Trailhead",
     northToSouth: 94.2,
     southToNorth: 203.6,
@@ -684,7 +684,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 57,
+    id: 59,
     name: "Temperance River Wayside Trailhead",
     northToSouth: 98.8,
     southToNorth: 199,
@@ -708,7 +708,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 59,
+    id: 57,
     name: "Skou Road Trailhead",
     northToSouth: 101.5,
     southToNorth: 196.3,
@@ -720,7 +720,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 60,
+    id: 56,
     name: "South Cross River",
     northToSouth: 101.5,
     southToNorth: 196.3,
@@ -732,7 +732,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 61,
+    id: 55,
     name: "North Cross River",
     northToSouth: 101.6,
     southToNorth: 196.2,
@@ -744,7 +744,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 62,
+    id: 54,
     name: "The Ledge",
     northToSouth: 102.2,
     southToNorth: 195.6,
@@ -756,7 +756,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 63,
+    id: 53,
     name: "The Falls",
     northToSouth: 103,
     southToNorth: 194.8,
@@ -768,7 +768,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 64,
+    id: 52,
     name: "Fredenberg Creek",
     northToSouth: 104.8,
     southToNorth: 193,
@@ -780,7 +780,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 65,
+    id: 51,
     name: "Cook County Road 1 Trailhead",
     northToSouth: 106.4,
     southToNorth: 191.4,
@@ -792,7 +792,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 66,
+    id: 50,
     name: "Dyers Creek",
     northToSouth: 107.7,
     southToNorth: 190.1,
@@ -804,7 +804,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 67,
+    id: 49,
     name: "Sugarloaf Pond",
     northToSouth: 111.1,
     southToNorth: 186.7,
@@ -816,7 +816,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 68,
+    id: 48,
     name: "Sugarloaf Road Trailhead",
     northToSouth: 112,
     southToNorth: 185.8,
@@ -828,7 +828,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 69,
+    id: 47,
     name: "Cystal Creek",
     northToSouth: 113.5,
     southToNorth: 184.3,
@@ -840,7 +840,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 70,
+    id: 46,
     name: "East Caribou River",
     northToSouth: 114.7,
     southToNorth: 183.1,
@@ -852,7 +852,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 71,
+    id: 45,
     name: "Caribou Falls State Wayside Trailhead",
     northToSouth: 114.7,
     southToNorth: 183.1,
@@ -864,7 +864,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 72,
+    id: 44,
     name: "West Caribou River",
     northToSouth: 114.8,
     southToNorth: 183,
@@ -876,7 +876,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 73,
+    id: 43,
     name: "Horseshoe Ridge",
     northToSouth: 117.6,
     southToNorth: 180.2,
@@ -888,7 +888,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 74,
+    id: 42,
     name: "George Crosby Manitou State Park Trailhead",
     northToSouth: 121.7,
     southToNorth: 176.1,
@@ -900,7 +900,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 75,
+    id: 41,
     name: "Aspen Knob",
     northToSouth: 122.6,
     southToNorth: 175.2,
@@ -912,7 +912,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 76,
+    id: 40,
     name: "Blesener Creek",
     northToSouth: 124.6,
     southToNorth: 173.2,
@@ -924,7 +924,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 77,
+    id: 39,
     name: "East Branch Baptism River",
     northToSouth: 125.2,
     southToNorth: 172.6,
@@ -936,7 +936,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 78,
+    id: 38,
     name: "Sonju Lake Road Trailhead",
     northToSouth: 125.7,
     southToNorth: 172.1,
@@ -948,7 +948,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 79,
+    id: 37,
     name: "North Sonju Lake",
     northToSouth: 127,
     southToNorth: 170.8,
@@ -960,7 +960,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 80,
+    id: 36,
     name: "South Sonju Lake",
     northToSouth: 127.3,
     southToNorth: 170.5,
@@ -972,7 +972,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 81,
+    id: 35,
     name: "North Egge Lake",
     northToSouth: 130.3,
     southToNorth: 167.5,
@@ -984,7 +984,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 82,
+    id: 34,
     name: "South Egge Lake",
     northToSouth: 130.5,
     southToNorth: 167.3,
@@ -996,7 +996,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 83,
+    id: 33,
     name: "Lake County Road 7 Trailhead",
     northToSouth: 133,
     southToNorth: 164.8,
@@ -1008,7 +1008,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 84,
+    id: 32,
     name: "Leskinen Creek",
     northToSouth: 135.1,
     southToNorth: 162.7,
@@ -1020,7 +1020,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 85,
+    id: 31,
     name: "Section 13",
     northToSouth: 138.8,
     southToNorth: 159,
@@ -1032,7 +1032,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 86,
+    id: 30,
     name: "Lake County Road 6 Trailhead",
     northToSouth: 140.2,
     southToNorth: 157.6,
@@ -1044,7 +1044,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 87,
+    id: 29,
     name: "East Kenney Creek",
     northToSouth: 144.9,
     southToNorth: 152.9,
@@ -1056,7 +1056,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 88,
+    id: 28,
     name: "West Kennedy Creek",
     northToSouth: 144.9,
     southToNorth: 152.9,
@@ -1068,7 +1068,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 89,
+    id: 27,
     name: "Minnesota Highway 1 Trailhead",
     northToSouth: 147.2,
     southToNorth: 150.6,
@@ -1080,7 +1080,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 90,
+    id: 26,
     name: "Tettegouche State Park Wayside Trailhead",
     northToSouth: 148,
     southToNorth: 149.8,
@@ -1092,7 +1092,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 91,
+    id: 25,
     name: "Tettegouche State Park Trailhead",
     northToSouth: 148.6,
     southToNorth: 149.2,
@@ -1104,7 +1104,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 92,
+    id: 24,
     name: "East Palisade Creek",
     northToSouth: 152.9,
     southToNorth: 144.9,
@@ -1116,7 +1116,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 93,
+    id: 23,
     name: "Bear Lake",
     northToSouth: 154.7,
     southToNorth: 143.1,
@@ -1128,7 +1128,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 94,
+    id: 22,
     name: "Penn Creek",
     northToSouth: 155.9,
     southToNorth: 141.9,
@@ -1140,7 +1140,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 95,
+    id: 21,
     name: "Penn Boulevard Trailhead",
     northToSouth: 157.9,
     southToNorth: 139.9,
@@ -1152,7 +1152,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 96,
+    id: 20,
     name: "East Beaver River",
     northToSouth: 161.2,
     southToNorth: 136.6,
@@ -1164,7 +1164,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 97,
+    id: 19,
     name: "West Beaver River",
     northToSouth: 161.5,
     southToNorth: 136.3,
@@ -1176,7 +1176,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 98,
+    id: 18,
     name: "Lax Lake Road Trailhead",
     northToSouth: 162.2,
     southToNorth: 135.6,
@@ -1188,7 +1188,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 99,
+    id: 17,
     name: "Fault Line Creek",
     northToSouth: 165.9,
     southToNorth: 131.9,
@@ -1200,7 +1200,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 100,
+    id: 16,
     name: "Beaver Pond",
     northToSouth: 167.3,
     southToNorth: 130.5,
@@ -1212,7 +1212,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 101,
+    id: 15,
     name: "Chapins Ridge",
     northToSouth: 169,
     southToNorth: 128.8,
@@ -1224,7 +1224,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 102,
+    id: 14,
     name: "Split Rock River Wayside Trailhead",
     northToSouth: 172.3,
     southToNorth: 125.5,
@@ -1236,7 +1236,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 103,
+    id: 13,
     name: "Southeast Split Rock River",
     northToSouth: 173.6,
     southToNorth: 124.2,
@@ -1248,7 +1248,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 104,
+    id: 12,
     name: "Northeast Split Rock River",
     northToSouth: 173.9,
     southToNorth: 123.9,
@@ -1260,7 +1260,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 105,
+    id: 11,
     name: "Northwest Split Rock River",
     northToSouth: 174.1,
     southToNorth: 123.7,
@@ -1272,7 +1272,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 106,
+    id: 10,
     name: "Southwest Split Rock River",
     northToSouth: 174.4,
     southToNorth: 123.4,
@@ -1284,7 +1284,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 107,
+    id: 9,
     name: "Split Rock River Wayside 2 Trailhead",
     northToSouth: 175.9,
     southToNorth: 121.9,
@@ -1296,7 +1296,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 108,
+    id: 8,
     name: "Blueberry Hill",
     northToSouth: 178.3,
     southToNorth: 119.5,
@@ -1308,7 +1308,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 109,
+    id: 7,
     name: "Gooseberry Falls State Park Visitor Center Trailhead",
     northToSouth: 182,
     southToNorth: 115.8,
@@ -1320,7 +1320,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 110,
+    id: 6,
     name: "Gooseberry River",
     northToSouth: 184.5,
     southToNorth: 113.3,
@@ -1332,7 +1332,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 111,
+    id: 5,
     name: "Middle Gooseberry River",
     northToSouth: 185.3,
     southToNorth: 112.5,
@@ -1344,7 +1344,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 112,
+    id: 4,
     name: "East Gooseberry River",
     northToSouth: 185.4,
     southToNorth: 112.4,
@@ -1356,7 +1356,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 113,
+    id: 3,
     name: "West Gooseberry River",
     northToSouth: 186.3,
     southToNorth: 111.5,
@@ -1368,7 +1368,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 114,
+    id: 2,
     name: "Crow Valley",
     northToSouth: 189.5,
     southToNorth: 108.3,
@@ -1380,7 +1380,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 115,
+    id: 1,
     name: "W. Castle Danger Road Trailhead",
     northToSouth: 190.7,
     southToNorth: 107.1,
@@ -1392,7 +1392,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 116,
+    id: 0,
     name: "Lake County Road 301 Trailhead",
     northToSouth: 196.7,
     southToNorth: 101.1,

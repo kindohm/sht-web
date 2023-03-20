@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { Trip, findTrips } from "@/trips/findTrips";
-import { getAllSegments } from "@/trips/getAllSegments";
+import { Trip, getTrips } from "@/trips/getTrips";
+import { getSegments } from "@/trips/getSegments";
 import { points } from "@/trips/points";
 import type { NextApiRequest, NextApiResponse } from "next";
 
@@ -26,13 +26,15 @@ export default function handler(
   const maxDailyDistance = getNumber(query.maxDailyDistance) ?? 10;
   const numberOfDays = getNumber(query.numberOfDays) ?? 3;
   const removeDuplicates = query.removeDuplicates === "true";
+  const onlyReliableWater = query.onlyReliableWater === "true";
 
-  const segments = getAllSegments({
+  const segments = getSegments({
     points,
-    minDailyDistance,
-    maxDailyDistance,
+    minDistancePerSegment: minDailyDistance,
+    maxDistancePerSegment: maxDailyDistance,
   });
-  const trips = findTrips({ segments, numberOfDays });
+
+  const trips = getTrips({ segments, numberOfDays, onlyReliableWater });
 
   const afterDupCheck = trips.reduce((reduced: Trip[], trip: Trip) => {
     if (!removeDuplicates) {

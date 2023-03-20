@@ -1,4 +1,4 @@
-import { Trip } from "@/trips/findTrips";
+import { Trip } from "@/trips/getTrips";
 import { useState } from "react";
 
 export const FindTrip = () => {
@@ -8,13 +8,14 @@ export const FindTrip = () => {
   const [minDailyDistance, setMinDailyDistance] = useState(3);
   const [trips, setTrips] = useState<Trip[] | null>(null);
   const [removeDuplicates, setRemoveDuplicates] = useState<boolean>(false);
+  const [onlyReliableWater, setOnlyReliableWater] = useState<boolean>(false);
 
   const findTripsClick = async () => {
     try {
       setSearching(true);
       setTrips([]);
       const resp = await fetch(
-        `/api/trips?numberOfDays=${numberOfDays.toString()}&maxDailyDistance=${maxDailyDistance}&minDailyDistance=${minDailyDistance}&removeDuplicates=${removeDuplicates}`
+        `/api/trips?numberOfDays=${numberOfDays.toString()}&maxDailyDistance=${maxDailyDistance}&minDailyDistance=${minDailyDistance}&removeDuplicates=${removeDuplicates}&onlyReliableWater=${onlyReliableWater}`
       );
       const data = await resp.json();
       setTrips(data);
@@ -78,6 +79,20 @@ export const FindTrip = () => {
         </label>
       </div>
 
+      <div className="form-check">
+        <input
+          className="form-check-input"
+          type="checkbox"
+          value=""
+          id="onlyReliableWater"
+          checked={onlyReliableWater}
+          onChange={(e) => setOnlyReliableWater(e.target.checked)}
+        />
+        <label className="form-check-label" htmlFor="onlyReliableWater">
+          Only show trips with 100% reliable water
+        </label>
+      </div>
+
       <div className="mt-3">
         <button
           className="btn btn-primary"
@@ -113,24 +128,21 @@ export const FindTrip = () => {
                             {(i + 1).toString()}
                           </td>
                           <td style={{ width: "400px" }}>
-                            {segment.points[0].name}{" "}
-                            {segment.points[0].type === "trailhead"
-                              ? `(${segment.points[0].distanceToParking.toFixed(
+                            {segment.startPoint.name}{" "}
+                            {segment.startPoint.type === "trailhead"
+                              ? `(${segment.startPoint.distanceToParking.toFixed(
                                   1
                                 )} mi)`
                               : ""}
-                            {segment.points[0].unreliableWater ? "🏜️" : ""}
+                            {segment.startPoint.unreliableWater ? "🏜️" : ""}
                           </td>
                           <td style={{ width: "400px" }}>
-                            {segment.points[segment.points.length - 1].name}{" "}
-                            {segment.points[segment.points.length - 1].type ===
+                            {segment.endPoint.name}{" "}
+                            {segment.endPoint.type ===
                             "trailhead"
-                              ? `(${segment.points[
-                                  segment.points.length - 1
-                                ].distanceToParking.toFixed(1)} mi)`
+                              ? `(${segment.endPoint.distanceToParking.toFixed(1)} mi)`
                               : ""}
-                            {segment.points[segment.points.length - 1]
-                              .unreliableWater
+                            {segment.endPoint.unreliableWater
                               ? "🏜️"
                               : ""}
                           </td>
