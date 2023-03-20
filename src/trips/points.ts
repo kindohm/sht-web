@@ -2,7 +2,7 @@
 import { pointsOfInterest } from "./pointsOfInterest";
 
 export type PointOfInterest = {
-  id: string;
+  id: number;
   name: string;
   type: "campsite" | "trailhead";
   northToSouth: number;
@@ -14,11 +14,7 @@ export type PointOfInterest = {
   overnightParking: "yes" | "no" | "unknown";
 };
 
-export type Point = PointOfInterest & {
-  id: string;
-  previousId?: number;
-  nextId?: number;
-};
+export type Point = PointOfInterest & { previousId?: number; nextId?: number };
 
 const sortPoints = (points: PointOfInterest[]) => {
   return points.sort((a, b) => {
