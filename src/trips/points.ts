@@ -1,4 +1,3 @@
-// import { PlainPoint, pointData } from "./pointData";
 import { pointsOfInterest } from "./pointsOfInterest";
 
 export type PointOfInterest = {
@@ -24,8 +23,6 @@ const sortPoints = (points: PointOfInterest[]) => {
 
 // @ts-expect-error its fine
 const rawPoints: PointOfInterest[] = pointsOfInterest;
-
-// console.log("rawpoints", rawPoints);
 
 export const points = sortPoints(rawPoints).map((p, i) => ({
   ...p,

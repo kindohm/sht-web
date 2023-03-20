@@ -118,7 +118,7 @@ export const FindTrip = () => {
           Find Trips
         </button>
       </div>
-      {trips !== null ? (
+      {!searching && trips !== null ? (
         <div className="mt-3">
           <h3>Found {trips.length} trips.</h3>
           {trips.map((trip) => {

@@ -25,27 +25,14 @@ export const getSegments = ({
     return a.id < b.id ? -1 : 1;
   });
 
-  console.log(
-    "points",
-    points.length,
-    minDistancePerSegment,
-    maxDistancePerSegment
-  );
-
-  console.log("sorted", sorted[0], sorted[sorted.length - 1]);
-
   const segments = sorted.reduce((accum: Segment[], point: Point) => {
-    // console.log("point", point.id, point.southToNorth);
     const pointsAfter = sorted.filter((s) => {
-      // console.log("s", s.id, s.southToNorth);
       return (
         s.id > point.id &&
         s.southToNorth - point.southToNorth <= maxDistancePerSegment &&
         s.southToNorth - point.southToNorth >= minDistancePerSegment
       );
     });
-
-    // console.log("pointsAfter", pointsAfter);
 
     const newSegments: Segment[] = pointsAfter.map((pointAfter) => {
       return {
