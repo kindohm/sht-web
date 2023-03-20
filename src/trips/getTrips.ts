@@ -124,6 +124,12 @@ export const getTrips = ({
   const tripsWithoutTrailheadsInMiddle = trips.filter((trip) => {
     if (trip.segments.length === 1) return true;
 
+    if (
+      (numberOfDays === 2 && trip.segments[0].endsAtTrailhead) ||
+      trip.segments[1].startsAtTrailhead
+    )
+      return false;
+
     const middleSegments = trip.segments.slice(1, trip.segments.length - 1);
 
     const segmentsWithTrailheads = middleSegments.filter(

@@ -151,9 +151,9 @@ export const FindTrip = () => {
                                 )} mi)`
                               : ""}
                             {segment.startPoint.overnightParking === "yes" &&
-                              "🚗"}
+                              " 🚗"}
                             {segment.startPoint.overnightParking === "no" &&
-                              "⛔"}
+                              " ⛔"}
                             {segment.startPoint.type === "campsite"
                               ? segment.startPoint.unreliableWater
                                 ? "🏜️"
@@ -168,7 +168,7 @@ export const FindTrip = () => {
                                 )} mi)`
                               : ""}
                             {segment.endPoint.overnightParking === "yes" &&
-                              "🚗"}
+                              " 🚗"}
                             {segment.endPoint.overnightParking === "no" && "⛔"}
                             {segment.endPoint.type === "campsite"
                               ? segment.endPoint.unreliableWater
