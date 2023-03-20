@@ -9,13 +9,15 @@ export const FindTrip = () => {
   const [trips, setTrips] = useState<Trip[] | null>(null);
   const [removeDuplicates, setRemoveDuplicates] = useState<boolean>(false);
   const [onlyReliableWater, setOnlyReliableWater] = useState<boolean>(false);
+  const [onlyOvernightParking, setOnlyOvernightParking] =
+    useState<boolean>(false);
 
   const findTripsClick = async () => {
     try {
       setSearching(true);
       setTrips([]);
       const resp = await fetch(
-        `/api/trips?numberOfDays=${numberOfDays.toString()}&maxDailyDistance=${maxDailyDistance}&minDailyDistance=${minDailyDistance}&removeDuplicates=${removeDuplicates}&onlyReliableWater=${onlyReliableWater}`
+        `/api/trips?numberOfDays=${numberOfDays.toString()}&maxDailyDistance=${maxDailyDistance}&minDailyDistance=${minDailyDistance}&removeDuplicates=${removeDuplicates}&onlyReliableWater=${onlyReliableWater}&onlyOvernightParking=${onlyOvernightParking}`
       );
       const data = await resp.json();
       setTrips(data);
@@ -93,6 +95,20 @@ export const FindTrip = () => {
         </label>
       </div>
 
+      <div className="form-check">
+        <input
+          className="form-check-input"
+          type="checkbox"
+          value=""
+          id="onlyOvernightParking"
+          checked={onlyOvernightParking}
+          onChange={(e) => setOnlyOvernightParking(e.target.checked)}
+        />
+        <label className="form-check-label" htmlFor="onlyOvernightParking">
+          Only show trailheads with overnight parking
+        </label>
+      </div>
+
       <div className="mt-3">
         <button
           className="btn btn-primary"
@@ -134,16 +150,30 @@ export const FindTrip = () => {
                                   1
                                 )} mi)`
                               : ""}
-                            {segment.startPoint.unreliableWater ? "🏜️" : ""}
+                            {segment.startPoint.overnightParking === "yes" &&
+                              "🚗"}
+                            {segment.startPoint.overnightParking === "no" &&
+                              "⛔"}
+                            {segment.startPoint.type === "campsite"
+                              ? segment.startPoint.unreliableWater
+                                ? "🏜️"
+                                : "💧"
+                              : ""}
                           </td>
                           <td style={{ width: "400px" }}>
                             {segment.endPoint.name}{" "}
-                            {segment.endPoint.type ===
-                            "trailhead"
-                              ? `(${segment.endPoint.distanceToParking.toFixed(1)} mi)`
+                            {segment.endPoint.type === "trailhead"
+                              ? `(${segment.endPoint.distanceToParking.toFixed(
+                                  1
+                                )} mi)`
                               : ""}
-                            {segment.endPoint.unreliableWater
-                              ? "🏜️"
+                            {segment.endPoint.overnightParking === "yes" &&
+                              "🚗"}
+                            {segment.endPoint.overnightParking === "no" && "⛔"}
+                            {segment.endPoint.type === "campsite"
+                              ? segment.endPoint.unreliableWater
+                                ? "🏜️"
+                                : "💧"
                               : ""}
                           </td>
                           <td style={{ margin: "auto" }}>

@@ -65,10 +65,12 @@ export const getTrips = ({
   segments,
   numberOfDays,
   onlyReliableWater,
+  onlyOvernightParking,
 }: {
   segments: Segment[];
   numberOfDays: number;
   onlyReliableWater?: boolean;
+  onlyOvernightParking?: boolean;
 }): Trip[] => {
   const sortedSegments = segments.sort((a, b) => {
     if (a.startPointId < b.startPointId) {
@@ -141,5 +143,17 @@ export const getTrips = ({
     return segmentsWithUnreliableWater.length === 0;
   });
 
-  return waterFilt;
+  const parkingFilt = waterFilt.filter((t) => {
+    if (!onlyOvernightParking) {
+      return true;
+    }
+
+    const { segments } = t;
+    return (
+      segments[0].startPoint.overnightParking === "yes" &&
+      segments[segments.length - 1].endPoint.overnightParking === "yes"
+    );
+  });
+
+  return parkingFilt;
 };

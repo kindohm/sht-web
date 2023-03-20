@@ -1,6 +1,6 @@
 export const pointsOfInterest = [
   {
-    id: 116,
+    id: 115,
     name: "Northern Terminus",
     northToSouth: 0,
     southToNorth: 297.8,
@@ -12,7 +12,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 115,
+    id: 114,
     name: "Otter Lake Road Trailhead",
     northToSouth: 1.2,
     southToNorth: 296.6,
@@ -21,10 +21,10 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.7,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
-    id: 114,
+    id: 113,
     name: "Andy Creek",
     northToSouth: 2.9,
     southToNorth: 294.9,
@@ -36,7 +36,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 113,
+    id: 112,
     name: "Andy Lake Road Trailhead",
     northToSouth: 4.5,
     southToNorth: 293.3,
@@ -45,10 +45,10 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
-    id: 112,
+    id: 111,
     name: "Jackson Creek",
     northToSouth: 8,
     southToNorth: 289.8,
@@ -60,7 +60,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 111,
+    id: 110,
     name: "Jackson Lake road Trailhead",
     northToSouth: 9.4,
     southToNorth: 288.4,
@@ -69,10 +69,10 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.1,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
-    id: 110,
+    id: 109,
     name: "Caribou Pond",
     northToSouth: 11.3,
     southToNorth: 0,
@@ -84,7 +84,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 109,
+    id: 108,
     name: "Arrowhead Trail Trailhead",
     northToSouth: 14.1,
     southToNorth: 283.7,
@@ -93,10 +93,10 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.1,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
-    id: 108,
+    id: 107,
     name: "North Carlson Pond",
     northToSouth: 15,
     southToNorth: 282.8,
@@ -108,7 +108,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 107,
+    id: 106,
     name: "Hazel",
     northToSouth: 19.9,
     southToNorth: 277.9,
@@ -120,7 +120,7 @@ export const pointsOfInterest = [
     overnightParking: "unknown",
   },
   {
-    id: 106,
+    id: 105,
     name: "North Camp 20 Road Trailhead",
     northToSouth: 22,
     southToNorth: 275.8,
@@ -129,19 +129,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 1.7,
-    overnightParking: "unknown",
-  },
-  {
-    id: 105,
-    name: "South Camp 20 Road Trailhead",
-    northToSouth: 23.7,
-    southToNorth: 274.1,
-    type: "trailhead",
-    size: "M",
-    unreliableWater: false,
-    waterNotes: "",
-    distanceToParking: 1.7,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 104,
@@ -153,7 +141,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 103,
@@ -213,7 +201,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.7,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 98,
@@ -297,7 +285,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 91,
@@ -333,7 +321,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 88,
@@ -345,7 +333,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.1,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 87,
@@ -381,7 +369,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 84,
@@ -405,7 +393,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.7,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 82,
@@ -429,7 +417,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.3,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 80,
@@ -465,7 +453,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.6,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 77,
@@ -513,7 +501,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.9,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 73,
@@ -573,7 +561,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.2,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 68,
@@ -621,11 +609,11 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 64,
-    name: "Onion River Road Trailhead",
+    name: "Onion River",
     northToSouth: 89.1,
     southToNorth: 208.7,
     type: "campsite",
@@ -681,7 +669,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 59,
@@ -693,7 +681,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.2,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 58,
@@ -705,7 +693,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 57,
@@ -717,7 +705,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 1.4,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 56,
@@ -789,7 +777,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 50,
@@ -825,7 +813,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 47,
@@ -861,7 +849,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.7,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 44,
@@ -897,7 +885,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 41,
@@ -945,7 +933,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.1,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 37,
@@ -1005,7 +993,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.3,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 32,
@@ -1041,7 +1029,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.2,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 29,
@@ -1077,7 +1065,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.1,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 26,
@@ -1149,7 +1137,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.1,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 20,
@@ -1185,7 +1173,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 17,
@@ -1233,7 +1221,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.7,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 13,
@@ -1293,7 +1281,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.5,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 8,
@@ -1317,7 +1305,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0.2,
-    overnightParking: "unknown",
+    overnightParking: "no",
   },
   {
     id: 6,
@@ -1389,7 +1377,7 @@ export const pointsOfInterest = [
     unreliableWater: false,
     waterNotes: "",
     distanceToParking: 0,
-    overnightParking: "unknown",
+    overnightParking: "yes",
   },
   {
     id: 0,

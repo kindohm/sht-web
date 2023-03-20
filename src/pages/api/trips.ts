@@ -27,6 +27,7 @@ export default function handler(
   const numberOfDays = getNumber(query.numberOfDays) ?? 3;
   const removeDuplicates = query.removeDuplicates === "true";
   const onlyReliableWater = query.onlyReliableWater === "true";
+  const onlyOvernightParking = query.onlyOvernightParking === "true";
 
   const segments = getSegments({
     points,
@@ -34,7 +35,12 @@ export default function handler(
     maxDistancePerSegment: maxDailyDistance,
   });
 
-  const trips = getTrips({ segments, numberOfDays, onlyReliableWater });
+  const trips = getTrips({
+    segments,
+    numberOfDays,
+    onlyReliableWater,
+    onlyOvernightParking,
+  });
 
   const afterDupCheck = trips.reduce((reduced: Trip[], trip: Trip) => {
     if (!removeDuplicates) {
