@@ -10,12 +10,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <div className="container">
+      <div className="container">
+        <main>
           <h1>SHT Trip Finder</h1>
           <FindTrip />
-        </div>
-      </main>
+        </main>
+        <footer className="mt-5">
+          <small>
+            &copy; 2023 Mike Hodnick. Unauthorized duplication may result in
+            sudden death or dismemberment.
+          </small>
+        </footer>
+      </div>
     </>
   );
 }
