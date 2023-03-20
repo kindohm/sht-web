@@ -17,7 +17,7 @@ type ParsedRow = {
 const convert = (rows: ParsedRow[]): PointOfInterest[] => {
   return rows.map((row, i) => {
     return {
-      id: rows.length -1 - i,
+      id: rows.length - 1 - i,
       name: row.name,
       northToSouth: +row.northToSouth,
       southToNorth: +row.southToNorth,
@@ -41,7 +41,7 @@ const convert = (rows: ParsedRow[]): PointOfInterest[] => {
   });
 };
 
-export default function Import() {
+export default function Import({ whereAmI }: { whereAmI: string }) {
   const [csvInput, setCsvInput] = useState("");
   const [output, setOutput] = useState("");
 
@@ -97,4 +97,14 @@ export default function Import() {
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const isLocal = process.env.NODE_ENV === "development";
+  return {
+    props: {
+      isLocal,
+    },
+    notFound: !isLocal,
+  };
 }
