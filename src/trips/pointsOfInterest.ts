@@ -1132,7 +1132,7 @@ export const pointsOfInterest = [
     name: "Penn Boulevard Trailhead",
     northToSouth: 157.9,
     southToNorth: 139.9,
-    type: "campsite",
+    type: "trailhead",
     size: "M",
     unreliableWater: false,
     waterNotes: "",
