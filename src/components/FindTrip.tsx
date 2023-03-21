@@ -88,6 +88,7 @@ export const FindTrip = () => {
           id="numberOfDays"
           placeholder="3"
           value={numberOfDays}
+          min={0}
           onChange={(e) => setNumberOfDays(+e.target.value)}
         />
       </div>
@@ -101,6 +102,7 @@ export const FindTrip = () => {
           id="maxDailyDistance"
           placeholder="10"
           value={maxDailyDistance}
+          min={0}
           onChange={(e) => setMaxDailyDistance(+e.target.value)}
         />
       </div>
@@ -114,6 +116,7 @@ export const FindTrip = () => {
           id="minDailyDistance"
           placeholder="3"
           value={minDailyDistance}
+          min={0}
           onChange={(e) => setMinDailyDistance(+e.target.value)}
         />
       </div>
