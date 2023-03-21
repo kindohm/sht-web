@@ -53,5 +53,7 @@ export default function handler(
     return reduced;
   }, []);
 
-  res.status(200).json(afterDupCheck);
+  const first100 = afterDupCheck.slice(0, 100);
+
+  res.status(200).json(first100);
 }
