@@ -1,24 +1,73 @@
+import { useRouter } from "next/router";
 import { Trip } from "@/trips/getTrips";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const FindTrip = () => {
+  const router = useRouter();
+  const { query } = router;
+
+  useEffect(() => {
+    const {
+      numberOfDays: numberOfDaysQuery,
+      maxDailyDistance: maxDailyDistanceQuery,
+      minDailyDistance: minDailyDistanceQuery,
+      removeDuplicates: removeDuplicatesQuery,
+      onlyReliableWater: onlyReliableWaterQuery,
+      onlyOvernightParking: onlyOvernightParkingQuery,
+    } = query;
+
+    numberOfDaysQuery !== undefined && setNumberOfDays(+numberOfDaysQuery);
+    maxDailyDistanceQuery !== undefined &&
+      setMaxDailyDistance(+maxDailyDistanceQuery);
+    minDailyDistanceQuery !== undefined &&
+      setMinDailyDistance(+minDailyDistanceQuery);
+    removeDuplicatesQuery !== undefined &&
+      setRemoveDuplicates(removeDuplicatesQuery === "true");
+    onlyReliableWaterQuery !== undefined &&
+      setOnlyReliableWater(onlyReliableWaterQuery === "true");
+    onlyOvernightParkingQuery !== undefined &&
+      setOnlyOvernightParking(onlyOvernightParkingQuery === "true");
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [query]);
+
   const [searching, setSearching] = useState(false);
   const [numberOfDays, setNumberOfDays] = useState(3);
   const [maxDailyDistance, setMaxDailyDistance] = useState(10);
   const [minDailyDistance, setMinDailyDistance] = useState(3);
   const [trips, setTrips] = useState<Trip[] | null>(null);
-  const [removeDuplicates, setRemoveDuplicates] = useState<boolean>(false);
+  const [removeDuplicates, setRemoveDuplicates] = useState<boolean>(true);
   const [onlyReliableWater, setOnlyReliableWater] = useState<boolean>(false);
   const [onlyOvernightParking, setOnlyOvernightParking] =
-    useState<boolean>(false);
+    useState<boolean>(true);
+  const [shareUrl, setShareUrl] = useState<string>("");
+
+  const getQuery = () => {
+    return `?numberOfDays=${numberOfDays.toString()}&maxDailyDistance=${maxDailyDistance}&minDailyDistance=${minDailyDistance}&removeDuplicates=${removeDuplicates}&onlyReliableWater=${onlyReliableWater}&onlyOvernightParking=${onlyOvernightParking}`;
+  };
+
+  const getShareUrl = () => {
+    const path = window.location.href.split("?")[0];
+    return `${path}${getQuery()}`;
+  };
+
+  useEffect(() => {
+    setShareUrl(getShareUrl());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    numberOfDays,
+    maxDailyDistance,
+    minDailyDistance,
+    removeDuplicates,
+    onlyReliableWater,
+    onlyOvernightParking,
+  ]);
 
   const findTripsClick = async () => {
     try {
       setSearching(true);
-      setTrips([]);
-      const resp = await fetch(
-        `/api/trips?numberOfDays=${numberOfDays.toString()}&maxDailyDistance=${maxDailyDistance}&minDailyDistance=${minDailyDistance}&removeDuplicates=${removeDuplicates}&onlyReliableWater=${onlyReliableWater}&onlyOvernightParking=${onlyOvernightParking}`
-      );
+      setTrips(null);
+      const resp = await fetch(`/api/trips${getQuery()}`);
       const data = await resp.json();
       setTrips(data);
     } finally {
@@ -115,12 +164,24 @@ export const FindTrip = () => {
           onClick={findTripsClick}
           disabled={searching}
         >
-          Find Trips
+          {searching ? "Searching..." : "Find Trips"}
         </button>
       </div>
       {!searching && trips !== null ? (
         <div className="mt-3">
-          <h3>Found {trips.length} trips.</h3>
+          <div className="row">
+            <div className="col-8">
+              <h3>Found {trips.length} trips.</h3>
+            </div>
+            <div className="col">
+              <input
+                readOnly={true}
+                value={shareUrl}
+                className="form-control form-control-sm"
+                type="text"
+              />
+            </div>
+          </div>
           {trips.map((trip) => {
             return (
               <div key={trip.id} className="mt-4 mb-5">
